@@ -1,22 +1,30 @@
 import logging
 
 # Set the log output file, and the log level
-loging.basicConfig(filename="snippets.log", level=logging.DEBUG)
+# logging.basicConfig(filename="snippets.log", level1=logging.DEBUG, level2=logging.INFO)
+# logging.basicConfig(filename="snippets.log", dict.level{1: logging.DEBUG, 2:logging.INFO, 3:logging.WARNING, 4:logging.ERROR, 5:logging.CRITICAL})
+logging.basicConfig(filename="snippets.log", level=logging.DEBUG
+
 
 def put(name, snippet):
     """
-    Store a snippet with an associated name. 
+    Store a snippet with an associated name.
+
     Returns the name and the snippet
     """
-    
     logging.error("FIXME: Unimplemented - put({!r}, {!r})".format(name, snippet))
     return name, snippet
     
-def get(name):
-    """Retreive the snippet with a given name. 
-    If there is no such snippet, return '404: Snippet Not Found'.
-    Returns the snippet
-    """
     
+def get(name):
+    """Retrieve the snippet with a given name.
+
+    If there is no such snippet, return '404: Snippet Not Found'.
+
+    Returns the snippet.
+    """
     logging.error("FIXME: Unimplemented - get({!r})".format(name))
     return ""
+
+    
+    
