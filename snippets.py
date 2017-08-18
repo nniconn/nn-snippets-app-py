@@ -6,6 +6,21 @@ import logging
 logging.basicConfig(filename="snippets.log", level=logging.DEBUG)
 
 
+# from bicycle class lesson - reference on how to use .format
+# class Bicycle(object):
+#     def __init__(self, brand, weight, prodCost):
+#         self.brand = brand
+#         self.weight = weight
+#         self.prodCost = prodCost
+        
+#     # change 
+#     def __repr__(self):
+#         return "{} {}lbs ${}".format(self.brand, self.weight, self.prodCost)
+        
+        
+class logging.LoggerAdapter(logger, extra)
+        
+        
 def put(name, snippet):
     """
     Store a snippet with an associated name.
