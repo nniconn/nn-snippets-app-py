@@ -3,7 +3,7 @@ import logging
 # Set the log output file, and the log level
 # logging.basicConfig(filename="snippets.log", level1=logging.DEBUG, level2=logging.INFO)
 # logging.basicConfig(filename="snippets.log", dict.level{1: logging.DEBUG, 2:logging.INFO, 3:logging.WARNING, 4:logging.ERROR, 5:logging.CRITICAL})
-logging.basicConfig(filename="snippets.log", level=logging.DEBUG
+logging.basicConfig(filename="snippets.log", level=logging.DEBUG)
 
 
 def put(name, snippet):
