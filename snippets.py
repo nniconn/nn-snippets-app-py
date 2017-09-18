@@ -5,7 +5,9 @@ import argparse
 # logging.basicConfig(filename="snippets.log", level1=logging.DEBUG, level2=logging.INFO)
 # logging.basicConfig(filename="snippets.log", dict.level{1: logging.DEBUG, 2:logging.INFO, 3:logging.WARNING, 4:logging.ERROR, 5:logging.CRITICAL})
 logging.basicConfig(filename="snippets.log", level=logging.DEBUG)
-#logging.basicConfig(filename="snippets.log", level=logging.INFO)
+logging.debug('Debug message for the log file')
+logging.info('Info message for the log file')
+logging.warning('Warning message for the log file')
 
 # from bicycle class lesson - reference on how to use .format
 # class Bicycle(object):
@@ -42,10 +44,10 @@ def get(name):
     """
     logging.error("FIXME: Unimplemented - get({!r})".format(name))
     return ""
-
+    
 
 def main():
-    """Main fucntion"""
+    """Main function"""
     logging.info("Constructing parser")
     parser = argparse.ArgumentParser(description="Store and retrieve snippets of text")
     
