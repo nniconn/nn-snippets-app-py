@@ -32,3 +32,18 @@ INFO:root:Info message for the log file
 WARNING:root:Warning message for the log file
 ERROR:root:FIXME: Unimplemented - put('list', 'A sequence of things = created using []')
 ERROR:root:FIXME: Unimplemented - get('list')
+2017-09-18 01:55:32,299 Debug message for the log file
+2017-09-18 01:55:32,302 Info message for the log file
+2017-09-18 01:55:32,302 Warning message for the log file , is when the event was logged
+2017-09-18 01:55:32,302 FIXME: Unimplemented - put('list', 'A sequence of things = created using []')
+2017-09-18 01:55:32,302 FIXME: Unimplemented - get('list')
+2017-09-18 01:55:33,552 Debug message for the log file
+2017-09-18 01:55:33,552 Info message for the log file
+2017-09-18 01:55:33,552 Warning message for the log file , is when the event was logged
+2017-09-18 01:55:33,552 FIXME: Unimplemented - put('list', 'A sequence of things = created using []')
+2017-09-18 01:55:33,552 FIXME: Unimplemented - get('list')
+2017-09-18 02:01:07,621 Debug message for the log file
+2017-09-18 02:01:07,622 Info message for the log file
+2017-09-18 02:01:07,622 Warning message for the log file
+2017-09-18 02:01:07,622 FIXME: Unimplemented - put('list', 'A sequence of things = created using []')
+2017-09-18 02:01:07,622 FIXME: Unimplemented - get('list')

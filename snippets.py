@@ -4,7 +4,7 @@ import argparse
 # Set the log output file, and the log level
 # logging.basicConfig(filename="snippets.log", level1=logging.DEBUG, level2=logging.INFO)
 # logging.basicConfig(filename="snippets.log", dict.level{1: logging.DEBUG, 2:logging.INFO, 3:logging.WARNING, 4:logging.ERROR, 5:logging.CRITICAL})
-logging.basicConfig(filename="snippets.log", level=logging.DEBUG)
+logging.basicConfig(format='%(asctime)s %(message)s', filename="snippets.log", level=logging.DEBUG)
 logging.debug('Debug message for the log file')
 logging.info('Info message for the log file')
 logging.warning('Warning message for the log file')
