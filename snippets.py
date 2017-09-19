@@ -23,6 +23,9 @@ logging.warning('Warning message for the log file')
         
 #class logging.LoggerAdapter(logger, extra)
         
+parser = argparse.ArgumentParser(description='Process some integers.')
+parser.add_argument('--foo', help='foo help')
+args = parser.parse_args()
         
 def put(name, snippet):
     """
