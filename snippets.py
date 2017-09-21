@@ -32,25 +32,49 @@ logging.debug("Database connection established.")
 
 def put(name, snippet):
     """Store a snippet with an associated name."""
-    logging.info("Storing snippet {!r}: {!r}".format(name, snippet))
-    cursor = connection.cursor()
-    command = "insert into snippets values (%s, %s)"
-    cursor.execute(command, (name, snippet))
+    # commenting the 3 lines below in order to try and refactor the put method to use context managers
+    # logging.info("Storing snippet {!r}: {!r}".format(name, snippet))
+    # cursor = connection.cursor()
+    # command = "insert into snippets values (%s, %s)"
+    with connection, connection.cursor() as cursor:
+        cursor.execute("store snippets where values=%s", (snippet,))
+
+
+    try:
+        command = "insert into snippets values (%s, %s)"
+        cursor.execute(command, (name, snippet))
+    except psycopg2.IntegrityError as e:
+        connection.rollback()
+        command = "update snippets set message=% where keyword=%s"
+        cursor.execute(command, (snippet, name))
     connection.commit()
     logging.debug("Snippet stored successfully.")
     return name, snippet
+
 
 def get(name):
     """Retrieve the snippet with a given name.
     If there is no such snippet, return '404: Snippet Not Found'.
     Returns the snippet.
     """
-
-    #retrieve the snippet from the db
+    #retrieve the snippet from the db - commnet from session of nicole darcy
+    #i added the 'cursor= ' line because it said it was unused code, copied it from def put()
+# commenting lines below to replace with new code as per class lesson
+    # cursor=connection.cursor()
+    # row = cursor.fetchone()
+    # connection.commit()
+    with connection, connection.cursor() as cursor:
+        cursor.execute("select message from snippets where keyword=%s", (name,))
+        row = cursor.fetchone()
+    if not row:
+        #No snippet was found with that name.
+        return "404: Snippet not Found"
+    return row[0]
     
-    logging.error("FIXME: Unimplemented - get({!r})".format(name))
-    print("this function is running",get.__name__)
-    return ""
+    # warning for 'unreachable code' so i commented it out...
+    # logging.error("FIXME: Unimplemented - get({!r})".format(name))
+    # print("this function is running",get.__name__)
+    # return ""
     
 
 def main():

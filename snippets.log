@@ -109,3 +109,45 @@ ERROR:root:FIXME: Unimplemented - get('list')
 2017-09-21 14:17:42,071 Constructing put subparser
 2017-09-21 14:17:42,072 Storing snippet 'Test': 'This is a test snippet'
 2017-09-21 14:17:42,091 Snippet stored successfully.
+2017-09-21 16:48:05,975 Debug message for the log file
+2017-09-21 16:48:05,976 Info message for the log file
+2017-09-21 16:48:05,976 Warning message for the log file
+2017-09-21 16:48:05,976 Connecting to PostgreSQL
+2017-09-21 16:48:05,984 Database connection established.
+2017-09-21 16:48:05,984 Constructing parser
+2017-09-21 16:48:05,990 Constructing put subparser
+2017-09-21 16:49:59,873 Debug message for the log file
+2017-09-21 16:49:59,873 Info message for the log file
+2017-09-21 16:49:59,873 Warning message for the log file
+2017-09-21 16:49:59,873 Connecting to PostgreSQL
+2017-09-21 16:49:59,880 Database connection established.
+2017-09-21 16:49:59,881 Constructing parser
+2017-09-21 16:49:59,882 Constructing put subparser
+2017-09-21 17:00:20,478 Debug message for the log file
+2017-09-21 17:00:20,478 Info message for the log file
+2017-09-21 17:00:20,479 Warning message for the log file
+2017-09-21 17:00:20,479 Connecting to PostgreSQL
+2017-09-21 17:00:20,483 Database connection established.
+2017-09-21 17:00:20,483 Constructing parser
+2017-09-21 17:00:20,484 Constructing put subparser
+2017-09-21 17:34:12,115 Debug message for the log file
+2017-09-21 17:34:12,116 Info message for the log file
+2017-09-21 17:34:12,116 Warning message for the log file
+2017-09-21 17:34:12,116 Connecting to PostgreSQL
+2017-09-21 17:34:12,123 Database connection established.
+2017-09-21 17:34:12,123 Constructing parser
+2017-09-21 17:34:12,125 Constructing put subparser
+2017-09-21 17:35:29,474 Debug message for the log file
+2017-09-21 17:35:29,474 Info message for the log file
+2017-09-21 17:35:29,475 Warning message for the log file
+2017-09-21 17:35:29,475 Connecting to PostgreSQL
+2017-09-21 17:35:29,479 Database connection established.
+2017-09-21 17:35:29,479 Constructing parser
+2017-09-21 17:35:29,481 Constructing put subparser
+2017-09-21 17:36:32,309 Debug message for the log file
+2017-09-21 17:36:32,309 Info message for the log file
+2017-09-21 17:36:32,309 Warning message for the log file
+2017-09-21 17:36:32,309 Connecting to PostgreSQL
+2017-09-21 17:36:32,313 Database connection established.
+2017-09-21 17:36:32,313 Constructing parser
+2017-09-21 17:36:32,315 Constructing put subparser
