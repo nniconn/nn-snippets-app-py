@@ -2,9 +2,6 @@ import logging
 import argparse
 import psycopg2
 
-# Set the log output file, and the log level
-# logging.basicConfig(filename="snippets.log", level1=logging.DEBUG, level2=logging.INFO)
-# logging.basicConfig(filename="snippets.log", dict.level{1: logging.DEBUG, 2:logging.INFO, 3:logging.WARNING, 4:logging.ERROR, 5:logging.CRITICAL})
 logging.basicConfig(format='%(asctime)s %(message)s', filename="snippets.log", level=logging.DEBUG)
 logging.debug('Debug message for the log file')
 logging.info('Info message for the log file')
@@ -17,16 +14,6 @@ logging.debug("Database connection established.")
 
 
 
-# from bicycle class lesson - reference on how to use .format
-# class Bicycle(object):
-#     def __init__(self, brand, weight, prodCost):
-#         self.brand = brand
-#         self.weight = weight
-#         self.prodCost = prodCost
-        
-#     change 
-#     def __repr__(self):
-#         return "{} {}lbs ${}".format(self.brand, self.weight, self.prodCost)
 
 # connect to database ( psycopg2 )
 
@@ -39,7 +26,7 @@ def put(name, snippet):
     with connection, connection.cursor() as cursor:
         cursor.execute("store snippets where values=%s", (snippet,))
 
-
+    
     try:
         command = "insert into snippets values (%s, %s)"
         cursor.execute(command, (name, snippet))
@@ -51,6 +38,16 @@ def put(name, snippet):
     logging.debug("Snippet stored successfully.")
     return name, snippet
 
+
+def catalog():
+    ''' To query keywords from snippets table'''
+    #cursor.fetchall() use this 
+    #select * from table order by age (find rows with value stored in age column)
+
+def search():
+    ''' To list snippets which contain a given string snywhere in their messages'''
+    
+    
 
 def get(name):
     """Retrieve the snippet with a given name.
@@ -88,6 +85,7 @@ def main():
     put_parser.add_argument('name', help="Name of snippet")
     put_parser.add_argument('snippet', help="Snippet text")
 
+
     get_parser = subparsers.add_parser('get', help="name to retrieve")
     get_parser.add_argument('name', help="Name to be retreived from the database")
     
@@ -96,7 +94,11 @@ def main():
     #put(name, snippet)    put_parser = subparsers.add_parser("put", help="Store a snippet")
     #put_parser.add_argument("name", help="Name of the snippet")
     #put_parser.add_argument("snippet", help="Snippet text")
-    
+    #test this
+    put_parser.add_argument('Nicole', help="Lives in Brooklyn")
+    put_parser.add_argument('Esther', help="Lives in Queens")
+    put_parser.add_argument('Chandi', help="Lives in NJ")
+ 
     
     arguments = parser.parse_args()
     # Convert parsed arguments from Namespace to dictionary
@@ -110,6 +112,10 @@ def main():
     elif command == "get":
         snippet = get(**arguments)
         print("Retrieved snippet: {!r}".format(snippet))
+        
+        
+
+    
         
 if __name__ == "__main__":
     main()

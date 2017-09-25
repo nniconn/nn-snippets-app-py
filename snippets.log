@@ -151,3 +151,91 @@ ERROR:root:FIXME: Unimplemented - get('list')
 2017-09-21 17:36:32,313 Database connection established.
 2017-09-21 17:36:32,313 Constructing parser
 2017-09-21 17:36:32,315 Constructing put subparser
+2017-09-24 17:08:53,055 Debug message for the log file
+2017-09-24 17:08:53,056 Info message for the log file
+2017-09-24 17:08:53,056 Warning message for the log file
+2017-09-24 17:08:53,056 Connecting to PostgreSQL
+2017-09-24 17:11:05,556 Debug message for the log file
+2017-09-24 17:11:05,556 Info message for the log file
+2017-09-24 17:11:05,556 Warning message for the log file
+2017-09-24 17:11:05,556 Connecting to PostgreSQL
+2017-09-24 17:13:58,310 Debug message for the log file
+2017-09-24 17:13:58,311 Info message for the log file
+2017-09-24 17:13:58,311 Warning message for the log file
+2017-09-24 17:13:58,311 Connecting to PostgreSQL
+2017-09-24 17:18:21,676 Debug message for the log file
+2017-09-24 17:18:21,676 Info message for the log file
+2017-09-24 17:18:21,676 Warning message for the log file
+2017-09-24 17:18:21,676 Connecting to PostgreSQL
+2017-09-24 17:32:04,168 Debug message for the log file
+2017-09-24 17:32:04,168 Info message for the log file
+2017-09-24 17:32:04,168 Warning message for the log file
+2017-09-24 17:32:04,168 Connecting to PostgreSQL
+2017-09-24 18:03:20,687 Debug message for the log file
+2017-09-24 18:03:20,687 Info message for the log file
+2017-09-24 18:03:20,687 Warning message for the log file
+2017-09-24 18:03:20,687 Connecting to PostgreSQL
+2017-09-24 18:03:27,317 Debug message for the log file
+2017-09-24 18:03:27,317 Info message for the log file
+2017-09-24 18:03:27,317 Warning message for the log file
+2017-09-24 18:03:27,318 Connecting to PostgreSQL
+2017-09-24 18:14:54,704 Debug message for the log file
+2017-09-24 18:14:54,705 Info message for the log file
+2017-09-24 18:14:54,705 Warning message for the log file
+2017-09-24 18:14:54,705 Connecting to PostgreSQL
+2017-09-24 19:23:43,116 Debug message for the log file
+2017-09-24 19:23:43,116 Info message for the log file
+2017-09-24 19:23:43,116 Warning message for the log file
+2017-09-24 19:23:43,116 Connecting to PostgreSQL
+2017-09-24 19:23:43,147 Database connection established.
+2017-09-24 19:23:43,147 Constructing parser
+2017-09-24 19:23:43,149 Constructing put subparser
+2017-09-24 20:16:00,330 Debug message for the log file
+2017-09-24 20:16:00,330 Info message for the log file
+2017-09-24 20:16:00,330 Warning message for the log file
+2017-09-24 20:16:00,330 Connecting to PostgreSQL
+2017-09-24 20:16:00,335 Database connection established.
+2017-09-24 20:16:00,335 Constructing parser
+2017-09-24 20:16:00,337 Constructing put subparser
+2017-09-24 20:16:18,312 Debug message for the log file
+2017-09-24 20:16:18,312 Info message for the log file
+2017-09-24 20:16:18,312 Warning message for the log file
+2017-09-24 20:16:18,312 Connecting to PostgreSQL
+2017-09-24 20:16:18,317 Database connection established.
+2017-09-24 20:16:18,317 Constructing parser
+2017-09-24 20:16:18,318 Constructing put subparser
+2017-09-24 20:16:27,970 Debug message for the log file
+2017-09-24 20:16:27,970 Info message for the log file
+2017-09-24 20:16:27,970 Warning message for the log file
+2017-09-24 20:16:27,970 Connecting to PostgreSQL
+2017-09-24 20:16:27,974 Database connection established.
+2017-09-24 20:16:27,974 Constructing parser
+2017-09-24 20:16:27,976 Constructing put subparser
+2017-09-24 20:16:40,874 Debug message for the log file
+2017-09-24 20:16:40,874 Info message for the log file
+2017-09-24 20:16:40,874 Warning message for the log file
+2017-09-24 20:16:40,874 Connecting to PostgreSQL
+2017-09-24 20:16:40,878 Database connection established.
+2017-09-24 20:16:40,878 Constructing parser
+2017-09-24 20:16:40,880 Constructing put subparser
+2017-09-24 20:17:07,963 Debug message for the log file
+2017-09-24 20:17:07,963 Info message for the log file
+2017-09-24 20:17:07,963 Warning message for the log file
+2017-09-24 20:17:07,963 Connecting to PostgreSQL
+2017-09-24 20:17:07,968 Database connection established.
+2017-09-24 20:17:07,968 Constructing parser
+2017-09-24 20:17:07,970 Constructing put subparser
+2017-09-24 20:18:24,462 Debug message for the log file
+2017-09-24 20:18:24,462 Info message for the log file
+2017-09-24 20:18:24,462 Warning message for the log file
+2017-09-24 20:18:24,462 Connecting to PostgreSQL
+2017-09-24 20:18:24,466 Database connection established.
+2017-09-24 20:18:24,466 Constructing parser
+2017-09-24 20:18:24,468 Constructing put subparser
+2017-09-24 20:18:59,453 Debug message for the log file
+2017-09-24 20:18:59,453 Info message for the log file
+2017-09-24 20:18:59,453 Warning message for the log file
+2017-09-24 20:18:59,453 Connecting to PostgreSQL
+2017-09-24 20:18:59,457 Database connection established.
+2017-09-24 20:18:59,457 Constructing parser
+2017-09-24 20:18:59,459 Constructing put subparser
