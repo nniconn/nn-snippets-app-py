@@ -39,14 +39,21 @@ def put(name, snippet):
     return name, snippet
 
 
-def catalog():
+def catalog(name):
     ''' To query keywords from snippets table'''
     #cursor.fetchall() use this 
     #select * from table order by age (find rows with value stored in age column)
+    with connection, connection.cursor() as cursor:
+        cursor.execute("select all keyword=%s", (name,))
+        row = cursor.fetchall()
+    if not row:
+        #No snippet was found with that name.
+        return "404: Snippet not Found"
+    return row[0]
 
 def search():
     ''' To list snippets which contain a given string snywhere in their messages'''
-    
+    #using like operator - select * from table where prescription like '%cobwell%'
     
 
 def get(name):
